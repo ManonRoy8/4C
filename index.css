@@ -1,0 +1,63 @@
+/*L'entête*/
+
+header{
+    border: 2px black solid; /*Me permet de visualiser mon conteneur*/
+
+    /*Permet de mettre en forme le texte*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*Permet de mettre en place l'image de fond*/
+      margin-top: 15px;
+      height: 130px;
+      background: url("images/fond_fleur.jpeg") no-repeat;
+      background-position: center;
+      position: relative;
+      margin-bottom: 25px;
+  }
+
+/*Modification de la disposition de la liste*/
+ul {
+    padding: 0;
+  }
+/*Permet de travailler sur les objets de la liste*/
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px;
+    background:#d3cccc;
+  }
+
+  /*Permet de changer la couleur de l'objet de la liste au survol de la souris*/
+ul li:hover {
+    background: #ddd;
+  }
+
+/*Conteneur du boutton ajouter une tâche (et plus tard une barre pour taper du texte)*/
+#ajout{
+    /*border: 2px black solid;*/
+    display: flex;
+    justify-content: center;
+}
+
+/* Code pour modifier la barre pour ajouter du texte
+#input{
+  display : flex;
+  width: 90%;
+}
+*/
+
+/*Permet de modifier l'apparence du boutton pour ajouter une tâche*/
+#button{
+  cursor: pointer;
+  border:none;
+  padding:6px 0 6px 0;
+  border-radius:8px;
+  background:#d3cccc;
+  width: 20%;
+}
+/*Permet de modifier la couleur du boutton au survol de la souris*/
+#button:hover{
+  background: #ddd;
+}
