@@ -11,10 +11,11 @@ header{
     /*Permet de mettre en place l'image de fond*/
       margin-top: 15px;
       height: 130px;
-      background: url("images/fond_fleur.jpeg") no-repeat;
+      background: url("../img/fond_fleur.jpeg") no-repeat;
       background-position: center;
       position: relative;
       margin-bottom: 25px;
+      flex-grow: 1;
   }
 
 /*Modification de la disposition de la liste*/

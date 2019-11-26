@@ -1,5 +1,5 @@
 //Permet d'ajouter une tâche lorsque l'on clique sur le boutton ajouter
-document.querySelector("button").addEventListener("click", function () {
+document.querySelector("#button-add").addEventListener("click", function () {
     var nomTache = prompt("Entrez votre tâche :");
 
     // Créer et ajouter un élément au DOM
