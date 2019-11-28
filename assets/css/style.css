@@ -49,15 +49,6 @@ display: flex;
 justify-content: center;
 }
 
-/* Code pour modifier la barre pour ajouter du texte
-#input{
-display : flex;
-width: 90%;
-display : flex;
-width: 90%;
-}
-*/
-
 /*Permet de modifier l'apparence du boutton pour ajouter une tâche*/
 #button{
 cursor: pointer;
@@ -78,6 +69,7 @@ width: 20%;
 background: #ddd;
 background: #ddd;
 }
+
 .delete {
 color: red;
 display: flex;
@@ -87,3 +79,13 @@ justify-content: flex-end;
 font-weight: bold;
 font-style: italic;
 }
+
+.modify {
+  color: orange;
+  display: flex;
+  justify-content: flex-end;
+  }
+.modify:hover{
+  font-weight: bold;
+  font-style: italic;
+  }
