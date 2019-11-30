@@ -1,65 +1,61 @@
-/*L'entête*/
-
-header{
-  border: 2px black solid; /*Me permet de visualiser mon conteneur*/
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
-  height: 130px;
-  background: url("../img/fond_fleur.jpeg") no-repeat;
-  background-position: center;
-  position: relative;
-  margin-bottom: 25px;
-  flex-grow: 1;
-}
-
-ul {
+* {
+  box-sizing: border-box;
+  margin: 0;
   padding: 0;
 }
 
-ul li {
-  cursor: pointer;
-  position: relative;
-  padding: 12px;
-  background:#d3cccc;
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+  font-size: 14px;
 }
 
-ul li {
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  background: url("../img/fond_fleur.jpeg") no-repeat center;
+  align-items: center;
+  padding: 4em 0;
+}
+
+main > h2 {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  text-decoration: underline;
+  padding: 1em 0;
+}
+
+aside {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+ul > li {
   cursor: pointer;
   position: relative;
-  padding: 12px;
   background:#d3cccc;
+  padding: 1em;
+  width: 100%;
 }
 
 ul li:hover {
   background: #ddd;
 }
 
-#add{
-/*border: 2px black solid;*/
-  display: flex;
-  justify-content: center;
-}
-
-#button{
+#button-add{
+  align-self: center;
   cursor: pointer;
   border:none;
   padding:6px 0 6px 0;
   border-radius:8px;
   background:#d3cccc;
   width: 20%;
-  cursor: pointer;
-  border:none;
-  padding:6px 0 6px 0;
-  border-radius:8px;
-  background:#d3cccc;
-  width: 20%;
+  margin-bottom: 1em;
 }
 
-#button:hover{
-  background: #ddd;
+#button-add:hover{
   background: #ddd;
 }
 
@@ -69,17 +65,6 @@ ul li:hover {
   justify-content: flex-end;
 }
 .delete:hover{
-  font-weight: bold;
-  font-style: italic;
-}
-
-.modify {
-  color: orange;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.modify:hover{
   font-weight: bold;
   font-style: italic;
 }
