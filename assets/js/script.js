@@ -21,16 +21,7 @@ document.querySelector("#button-add").addEventListener("click", function () {
     document.getElementById("list").appendChild(checkTask);
 
     document.getElementById("list").appendChild(newElt); // Insertion de la nouvelle tâche
-    
-    //Valider une tâche ou non
-    var checkBox = document.getElementsByClassName("checkbox");
-    var text = document.getElementsByClassName("task");
-    if (checkBox.checked == true){
-        text.style.visibility = "hidden";
-    } else {
-        text.style.visibility = "visible";
-    }
-    
+
     //Permet de modifier la tâche lorsque l'on clique dessus
     newElt.addEventListener("click", function (e) {
         alert("Pour modifier votre tâche, tapez du texte.")
@@ -45,4 +36,13 @@ document.querySelector("#button-add").addEventListener("click", function () {
         document.getElementById("list").removeChild(spanDelete);
 
     });
+
+       //Valider une tâche ou non
+       var checkBox = document.getElementsByClassName("checkbox");
+       var task = document.getElementsByClassName("task");
+       if (checkBox.checked == true){
+        task.style.visibility = "hidden";
+       } else {
+        task.style.visibility = "visible";
+       }
 });
