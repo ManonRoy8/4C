@@ -38,6 +38,7 @@ ul > li {
   background:#d3cccc;
   padding: 1em;
   width: 100%;
+  display: flex;
 }
 
 ul li:hover {
