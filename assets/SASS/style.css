@@ -32,8 +32,7 @@ aside {
   flex-flow: column nowrap;
 }
 
-#list
-{
+#list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -41,31 +40,29 @@ aside {
   align-items: center;
 }
 
-ul > li {
-  cursor: pointer;
+#list > li {
+  cursor: cursor;
   position: relative;
-  background:#d3cccc;
+  background: #d3cccc;
   padding: 1em;
   width: 100%;
   display: flex;
 }
-
-ul li:hover {
+#list > li:hover {
   background: #ddd;
 }
 
-#button-add{
+#button-add {
   align-self: center;
-  cursor: pointer;
-  border:none;
-  padding:6px 0 6px 0;
-  border-radius:8px;
-  background:#d3cccc;
+  cursor: cursor;
+  border: none;
+  padding: 6px 0 6px 0;
+  border-radius: 8px;
+  background: #d3cccc;
   width: 20%;
   margin-bottom: 1em;
 }
-
-#button-add:hover{
+#button-add:hover {
   background: #ddd;
 }
 
@@ -75,20 +72,34 @@ ul li:hover {
   display: flex;
   justify-content: flex-end;
 }
-.delete:hover{
-  cursor: pointer;
+.delete:hover {
+  cursor: cursor;
   font-weight: bold;
   font-style: italic;
 }
 
-.after, .before {
+.after {
   color: orange;
   margin-top: 1em;
   display: flex;
   justify-content: flex-end;
 }
-.after:hover, .before:hover{
-  cursor: pointer;
+.after:hover {
+  cursor: cursor;
   font-weight: bold;
   font-style: italic;
 }
+
+.before {
+  color: orange;
+  margin-top: 1em;
+  display: flex;
+  justify-content: flex-end;
+}
+.before:hover {
+  cursor: cursor;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=style.css.map */
