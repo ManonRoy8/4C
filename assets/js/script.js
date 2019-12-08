@@ -12,19 +12,19 @@ $("#button-add").click(function() {
         newElt.addClass("task");
 
         //Création d'un bouton supprimé
-        var spanDelete = $("<span></span>").text("X");
+        var spanDelete = $("<span></span>").html("<i class='fas fa-trash'></i>");
         spanDelete.addClass("delete");
         spanDelete.attr('title', "Cliquez pour supprimer votre tâche");
         $("#list").append(spanDelete);
 
         //Création d'un bouton déplacer à la fin
-        var spanBefore= $("<span></span>").text("F");
+        var spanBefore= $("<span></span>").html("<i class='fas fa-arrow-up'></i>");
         spanBefore.addClass("before");
         spanBefore.attr('title', "Cliquez pour déplacer votre tâche au début");
         $("#list").append(spanBefore);
 
         //Création d'un bouton déplacer à la fin
-        var spanAfeter = $("<span></span>").text("E");
+        var spanAfeter = $("<span></span>").html("<i class='fas fa-arrow-down'></i>");
         spanAfeter.addClass("after");
         spanAfeter.attr('title', "Cliquez pour déplacer votre tâche à la fin");
         $("#list").append(spanAfeter);
