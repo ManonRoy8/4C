@@ -19,12 +19,15 @@ header {
   padding: 4em 0;
 }
 
-main > h2 {
+main {
   display: flex;
   flex-flow: column nowrap;
+  padding: 1em 0;
+}
+main > h2 {
+  display: flex;
   align-items: flex-start;
   text-decoration: underline;
-  padding: 1em 0;
 }
 
 aside {
@@ -32,8 +35,7 @@ aside {
   flex-flow: column nowrap;
 }
 
-#list
-{
+#list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -44,28 +46,26 @@ aside {
 ul > li {
   cursor: pointer;
   position: relative;
-  background:#d3cccc;
+  background: #d3cccc;
   padding: 1em;
   width: 100%;
   display: flex;
 }
-
-ul li:hover {
+ul > li:hover {
   background: #ddd;
 }
 
-#button-add{
+#button-add {
   align-self: center;
   cursor: pointer;
-  border:none;
-  padding:6px 0 6px 0;
-  border-radius:8px;
-  background:#d3cccc;
+  border: none;
+  padding: 6px 0 6px 0;
+  border-radius: 8px;
+  background: #d3cccc;
   width: 20%;
   margin-bottom: 1em;
 }
-
-#button-add:hover{
+#button-add:hover {
   background: #ddd;
 }
 
@@ -75,7 +75,7 @@ ul li:hover {
   display: flex;
   justify-content: flex-end;
 }
-.delete:hover{
+.delete:hover {
   cursor: pointer;
   font-weight: bold;
   font-style: italic;
@@ -87,8 +87,11 @@ ul li:hover {
   display: flex;
   justify-content: flex-end;
 }
-.after:hover, .before:hover{
+
+.after:hover, .before:hover {
   cursor: pointer;
   font-weight: bold;
   font-style: italic;
 }
+
+/*# sourceMappingURL=style.css.map */

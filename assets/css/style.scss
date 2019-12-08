@@ -1,5 +1,3 @@
-$pointer: cursor;
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -21,12 +19,16 @@ header {
     padding: 4em 0;
 }
 
-main > h2 {
+main {
     display: flex;
     flex-flow: column nowrap;
-    align-items: flex-start;
-    text-decoration: underline;
     padding: 1em 0;
+
+    > h2 {
+        display: flex;
+        align-items: flex-start;
+        text-decoration: underline;
+    }
 }
 
 aside {
@@ -34,8 +36,7 @@ aside {
     flex-flow: column nowrap;
 }
 
-#list
-{
+#list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -43,22 +44,22 @@ aside {
     align-items: center;
 }
 
-#list > li {
-    cursor: $pointer;
+ul > li {
+    cursor: pointer;
     position: relative;
     background:#d3cccc;
     padding: 1em;
     width: 100%;
     display: flex;
 
-    &:hover{
+    &:hover {
         background: #ddd;
-    }
+        }
 }
 
-#button-add{
+#button-add {
     align-self: center;
-    cursor: $pointer;
+    cursor: pointer;
     border:none;
     padding:6px 0 6px 0;
     border-radius:8px;
@@ -68,7 +69,7 @@ aside {
 
     &:hover{
         background: #ddd;
-    }
+        }
 }
 
 .delete {
@@ -78,34 +79,20 @@ aside {
     justify-content: flex-end;
 
     &:hover{
-        cursor: $pointer;
+        cursor: pointer;
         font-weight: bold;
         font-style: italic;
-    }
-}
-
-.after {
-    color: orange;
-    margin-top: 1em;
-    display: flex;
-    justify-content: flex-end;
-
-    &:hover{
-            cursor: $pointer;
-            font-weight: bold;
-            font-style: italic;
         }
 }
 
-.before {
+.after, .before {
     color: orange;
     margin-top: 1em;
     display: flex;
     justify-content: flex-end;
-
-    &:hover{
-        cursor: $pointer;
-        font-weight: bold;
-        font-style: italic;
-    }
+}
+.after:hover, .before:hover{
+    cursor: pointer;
+    font-weight: bold;
+    font-style: italic;
 }
