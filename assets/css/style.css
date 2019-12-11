@@ -47,7 +47,6 @@ ul > li {
   background: #d3cccc;
   padding: 1em;
   width: 100%;
-  display: flex;
 }
 ul > li:hover {
   background: #ddd;
@@ -85,7 +84,6 @@ ul > li:hover {
   display: flex;
   justify-content: flex-end;
 }
-
 .after:hover, .before:hover {
   cursor: pointer;
   font-weight: bold;

@@ -82,14 +82,22 @@ ul > li {
         }
 }
 
-.after, .before {
+.after{
     color: orange;
     margin-top: 1em;
     display: flex;
     justify-content: flex-end;
+
+    &:hover{
+        cursor: pointer;
+        font-weight: bold;
+        font-style: italic;
+    }
 }
-.after:hover, .before:hover{
-    cursor: pointer;
-    font-weight: bold;
-    font-style: italic;
+
+.before{
+    @extend .after;
 }
+
+
+
